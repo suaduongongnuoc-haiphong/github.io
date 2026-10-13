@@ -255,7 +255,6 @@ footer{background:#052d45;color:#d8edf2;text-align:center;padding:28px;font-size
 </div>
 <div class="video-tip"><b>Để video phát được trên GitHub Pages:</b> tải các tệp <code>cong-trinh-01.mp4</code> đến <code>cong-trinh-04.mp4</code> lên cùng thư mục với tệp <code>index.html</code>. Nếu chưa có ảnh bìa, có thể bỏ thuộc tính <code>poster</code> hoặc tải các ảnh bìa tương ứng lên cùng thư mục. Các tên tệp phải khớp chính xác, kể cả dấu gạch nối và chữ hoa/thường.</div>
 </div></section>
-  ```html
 <!-- VIDEO YOUTUBE BỔ SUNG - GIỮ NGUYÊN 4 VIDEO CŨ -->
 <section class="video-section" id="youtube-videos">
   <div class="wrap">
@@ -267,19 +266,20 @@ footer{background:#052d45;color:#d8edf2;text-align:center;padding:28px;font-size
       </p>
     </div>
 
-    <div style="position:relative;width:100%;padding-top:56.25%;
-      border-radius:18px;overflow:hidden;background:#071b28;">
-      <iframesrc="https://www.youtube.com/embed?listType=playlist&list=PLCd6U3gxh5Mk"
+ ```html
+<div style="position:relative;width:100%;padding-top:56.25%;border-radius:18px;overflow:hidden;background:#071b28;">
+  <iframe
+    src="https://www.youtube.com/embed/videoseries?list=PLCd6U3gxh5Mk"
+    title="Video công trình thực tế của Minh Hiệp"
+    loading="lazy"
+    style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerpolicy="strict-origin-when-cross-origin"
+    allowfullscreen>
+  </iframe>
+</div>
+```
 
-        title="Video công trình thực tế của Minh Hiệp"
-        loading="lazy"
-        style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-        gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen>
-      </iframe>
-    </div>
 
     <div class="video-tip">
       <p>

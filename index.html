@@ -86,6 +86,50 @@ footer{background:#052d45;color:#d8edf2;text-align:center;padding:28px;font-size
 #service .article-card{grid-column:1/-1;width:100%;max-width:none;flex:1 1 100%;margin:22px 0 0;padding:clamp(22px,4vw,44px);border-radius:18px;background:#fff;border:1px solid var(--line);box-shadow:0 8px 28px #073b5c0d}
 #service .article-card h3{font-size:clamp(22px,3vw,32px);line-height:1.3;margin-bottom:16px}
 #service .article-card p{font-size:clamp(16px,1.5vw,18px);line-height:1.85;color:var(--ink)}
+
+
+/* Tối ưu hiển thị trên điện thoại và máy tính bảng */
+*,*::before,*::after{box-sizing:border-box}
+html{width:100%;max-width:100%;overflow-x:clip;scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{width:100%;max-width:100%;overflow-x:clip;margin:0}
+img,video,iframe,svg{max-width:100%}
+img,video{height:auto}
+button,a,input,select,textarea{touch-action:manipulation}
+@media(max-width:768px){
+  .container,.wrap,.inner,main{width:100%;max-width:100%;}
+  .container,.wrap,.inner{padding-left:16px;padding-right:16px}
+  header{position:relative;top:auto}
+  .brand{max-width:100%;min-width:0;align-items:center}
+  .brand-name{font-size:clamp(17px,4.5vw,21px);line-height:1.2;white-space:normal;overflow-wrap:anywhere}
+  .brand-subtitle{font-size:clamp(10px,2.8vw,12px);line-height:1.35;white-space:normal;overflow-wrap:anywhere}
+  .hero{padding:34px 0 28px}
+  .hero h1{font-size:clamp(27px,7vw,40px);line-height:1.16;overflow-wrap:anywhere}
+  .hero p{font-size:16px;line-height:1.65}
+  section{padding:38px 0}
+  section h2,.section-title{font-size:clamp(23px,6vw,32px);line-height:1.25;overflow-wrap:anywhere}
+  .grid,.upload-box,.cards,.reviews,.stats,.services-grid,.feature-grid{grid-template-columns:minmax(0,1fr)!important}
+  .card,.service-card,.review,.article-card,.video-card{min-width:0;max-width:100%}
+  .article-card{overflow-wrap:anywhere}
+  .article-card p,.service-card p,.card p{font-size:16px;line-height:1.75}
+  .btn,button,.button{min-height:44px}
+  input,select,textarea{font-size:16px;max-width:100%}
+  .video-card{flex-basis:84vw!important;width:84vw!important;max-width:420px}
+  #cases .video-grid,#youtube-videos .video-grid,.youtube-track,.article-track{gap:12px}
+  #cases .video-grid{animation-duration:42s}
+  #youtube-videos .video-grid{animation-duration:44s}
+  .video-frame iframe{width:100%;height:auto;aspect-ratio:16/9;min-height:0!important}
+  footer{padding-left:16px;padding-right:16px;overflow-wrap:anywhere}
+}
+@media(max-width:420px){
+  .container,.wrap,.inner{padding-left:12px;padding-right:12px}
+  .brand-mark{width:34px;height:34px;flex-basis:34px;margin-right:7px}
+  .brand-name{font-size:16px}
+  .brand-subtitle{font-size:9.5px}
+  .hero h1{font-size:27px}
+  .video-card{flex-basis:88vw!important;width:88vw!important}
+  .article-card{padding:16px!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Minh Hiệp – Siêu âm dò rò rỉ nước Hải Phòng và miền Bắc","telephone":"+84941689899","areaServed":["Hải Phòng","Thái Bình","Quảng Ninh","Hải Dương","các tỉnh miền Bắc Việt Nam"],"description":"Dịch vụ siêu âm dò rò rỉ nước Hải Phòng; hỗ trợ kiểm tra rò rỉ đường ống âm tường, âm sàn, đường ống ngầm và sự cố thất thoát nước bằng thiết bị chuyên dụng.","serviceType":["Siêu âm dò rò rỉ nước","Kiểm tra đường ống nước âm tường","Kiểm tra đường ống nước âm sàn","Dò tìm rò rỉ đường ống ngầm"],"url":"https://suaduongongnuoc-haiphong.github.io/github.io/"}
@@ -302,13 +346,9 @@ src="https://www.youtube.com/embed/9d1EPM89EIk?playsinline=1"
 
 
 
-<section class="contact" id="contact"><div class="wrap"><div class="head"><h2>LIÊN HỆ MINH HIỆP</h2><p>Dò rò rỉ nước Hải Phòng và các tỉnh miền Bắc.</p></div><div class="contactbox"><b>HOTLINE / ZALO</b><a class="phone" href="tel:0941689899">0941 689 899</a><p>Gọi điện hoặc nhắn Zalo. Nếu có thể, hãy gửi ảnh/video hiện trạng để trao đổi nhanh hơn.</p><div class="actions" style="justify-content:center"><a class="btn" href="tel:0941689899">☎ Gọi ngay</a><a class="btn blue" href="https://zalo.me/0941689899" target="_blank" rel="noopener">💬 Nhắn Zalo</a><a class="btn" href="#send">📷 Gửi ảnh</a></div></div></div></section>
-
-
-
 </main>
 
-<footer><b>MINH HIỆP • SIÊU ÂM DÒ RÒ RỈ NƯỚC HẢI PHÒNG & MIỀN BẮC</b><br>Điện thoại / Zalo: 0941 689 899<br>Địa chỉ: 334 Hòa Bình, An Hải, Hải Phòng<br>© 2026 Minh Hiệp</footer>
+<footer><b>MINH HIỆP • SIÊU ÂM DÒ RÒ RỈ NƯỚC HẢI PHÒNG & MIỀN BẮC</b><br>Điện thoại / Zalo: <a href="tel:0941689899" style="color:inherit;text-decoration:underline">0941 689 899</a><br>Địa chỉ: 334 Hòa Bình, An Hải, Hải Phòng<br>© 2026 Minh Hiệp</footer>
 <div class="float"><a class="call" href="tel:0941689899" aria-label="Gọi điện">☎</a><a class="zalo" href="https://zalo.me/0941689899" target="_blank" rel="noopener" aria-label="Mở Zalo">Zalo</a></div>
 
 <script>

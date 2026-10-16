@@ -198,6 +198,16 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+/* Bốn bài kiến thức đầy đủ; giữ nguyên phong cách và bố cục chung của website */
+.knowledge-articles-full{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:18px 0 8px}
+.knowledge-article{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 8px 28px #073b5c0d;scroll-margin-top:100px}
+.knowledge-article h3{color:var(--navy);font-size:21px;line-height:1.35;margin:4px 0 12px}
+.knowledge-article p,.knowledge-article li{color:var(--muted);font-size:15px;line-height:1.75}
+.knowledge-article ul{padding-left:22px}
+.knowledge-article .knowledge-cta{background:#eefaf5;border-left:4px solid var(--green);border-radius:8px;padding:12px;color:#174f43}
+.knowledge-article .knowledge-cta a{color:var(--blue);font-weight:900}
+@media(max-width:700px){.knowledge-articles-full{grid-template-columns:1fr}.knowledge-article{padding:18px}.knowledge-article h3{font-size:19px}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"HomeAndConstructionBusiness","name":"Minh Hiệp – Siêu âm dò rò rỉ nước Hải Phòng và miền Bắc","telephone":"+84941689899","areaServed":["Hải Phòng","Thái Bình","Quảng Ninh","Hải Dương","các tỉnh miền Bắc Việt Nam"],"description":"Dịch vụ siêu âm dò rò rỉ nước Hải Phòng; hỗ trợ kiểm tra rò rỉ đường ống âm tường, âm sàn, đường ống ngầm và sự cố thất thoát nước bằng thiết bị chuyên dụng.","serviceType":["Siêu âm dò rò rỉ nước","Kiểm tra đường ống nước âm tường","Kiểm tra đường ống nước âm sàn","Dò tìm rò rỉ đường ống ngầm"],"url":"https://suaduongongnuoc-haiphong.github.io/"}
@@ -304,6 +314,36 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
 <div class="head"><h2>KIẾN THỨC NƯỚC DÒ – RÒ RỈ &amp; THẤT THOÁT NƯỚC</h2>
 <p>Tổng hợp 6 bài kiến thức giúp nhận biết nguyên nhân tiền nước tăng cao, thất thoát nước, vị trí rò rỉ và cách xử lý ban đầu.</p></div>
 <div aria-label="Các bài viết kiến thức, bấm vào bài để xem chi tiết" class="article-marquee" id="knowledge-marquee"><div aria-live="polite" class="article-track" id="daily-articles"></div></div>
+<div class="knowledge-articles-full" aria-label="Bốn bài viết kiến thức về sự cố nước">
+<article class="knowledge-article" id="bai-viet-07"><span class="badge">KIẾN THỨC NƯỚC DÒ · BÀI 07</span>
+<h3>💧 Tiền nước tăng cao bất thường? Cẩn thận rò rỉ đường ống nước ngầm!</h3>
+<p>Tháng trước tiền nước chỉ vài trăm nghìn, tháng này bỗng tăng cao dù gia đình không sử dụng nhiều hơn? Đây có thể là dấu hiệu đường ống nước đang bị rò rỉ mà bạn chưa phát hiện ra.</p>
+<p><strong>Những dấu hiệu cần chú ý:</strong></p><ul><li>Tiền nước tăng cao bất thường qua từng tháng.</li><li>Đồng hồ nước vẫn quay dù đã khóa các vòi nước trong nhà.</li><li>Máy bơm tăng áp chạy liên tục, khó tự ngắt.</li><li>Tường hoặc sàn nhà ẩm ướt nhưng chưa rõ nguyên nhân.</li></ul>
+<p>Trước tiên, hãy kiểm tra các vòi nước, bồn cầu và thiết bị dùng nước. Nếu không tìm thấy nguyên nhân, đường ống âm tường hoặc âm sàn có thể cần được kiểm tra. Đừng vội đục phá khi chưa khoanh vùng vị trí nghi rò.</p>
+<p>Minh Hiệp chuyên siêu âm dò tìm và sửa chữa rò rỉ nước tại đường ống âm tường, âm sàn và đường ống ngầm. Thiết bị chuyên dụng hỗ trợ khoanh vùng vị trí nghi rò, giúp hạn chế đục phá không cần thiết. Trao đổi phương án và báo giá trước khi thi công.</p>
+<p class="knowledge-cta"><strong>📞 Tiền nước tăng cao bất thường? Liên hệ điện thoại/Zalo Minh Hiệp: <a href="tel:0941689899">0941 689 899</a> để được tư vấn và hỗ trợ sửa chữa tại Hải Phòng và các tỉnh miền Bắc.</strong></p></article>
+<article class="knowledge-article" id="bai-viet-08"><span class="badge">KIẾN THỨC NƯỚC DÒ · BÀI 08</span>
+<h3>🚰 Đã khóa hết vòi nước mà đồng hồ vẫn quay?</h3>
+<p>Nếu đồng hồ nước vẫn quay khi gia đình không sử dụng nước, hệ thống có thể đang thất thoát nước hoặc còn thiết bị sử dụng nước chưa được kiểm tra.</p>
+<p><strong>Anh/chị có thể kiểm tra ban đầu:</strong></p><ul><li>Đóng các vòi nước và tạm ngừng sử dụng máy giặt, bình nóng lạnh hoặc thiết bị cấp nước khác.</li><li>Kiểm tra bồn cầu xem nước có chảy rỉ liên tục vào bồn hay không.</li><li>Quan sát đồng hồ trong vài phút khi mọi thiết bị đã ngừng sử dụng.</li><li>Nếu đồng hồ vẫn quay, ghi lại hiện tượng và liên hệ thợ kiểm tra hệ thống.</li></ul>
+<p>Không nên tự ý đục tường hoặc nền nhà khi chưa xác định được nguyên nhân. Rò rỉ có thể nằm ở đường ống âm tường, âm sàn hoặc một thiết bị trong nhà.</p>
+<p>Minh Hiệp nhận kiểm tra, dò tìm và sửa chữa sự cố đồng hồ nước quay bất thường, thất thoát nước và rò rỉ đường ống. Thiết bị chuyên dụng hỗ trợ xác định khu vực nghi rò trước khi sửa chữa.</p>
+<p class="knowledge-cta"><strong>📞 Đồng hồ nước vẫn quay khi không sử dụng? Gọi điện/Zalo Minh Hiệp: <a href="tel:0941689899">0941 689 899</a> để được tư vấn và hỗ trợ sửa chữa tại Hải Phòng và các tỉnh miền Bắc.</strong></p></article>
+<article class="knowledge-article" id="bai-viet-09"><span class="badge">KIẾN THỨC NƯỚC DÒ · BÀI 09</span>
+<h3>🔧 Rò rỉ đường ống nước âm tường, âm sàn – đừng vội đục phá!</h3>
+<p>Đường ống nước đi ngầm trong tường hoặc dưới nền nhà bị rò rỉ thường khó xác định bằng mắt thường. Nếu đục phá không đúng vị trí, gia đình có thể tốn thêm thời gian và chi phí mà vẫn chưa xử lý được sự cố.</p>
+<p><strong>Các dấu hiệu thường gặp:</strong></p><ul><li>Tiền nước tăng cao dù mức sử dụng không đổi.</li><li>Đồng hồ nước quay khi đã khóa các thiết bị dùng nước.</li><li>Tường hoặc nền nhà xuất hiện vết ẩm bất thường.</li><li>Nước thấm sang phòng bên cạnh hoặc nhà hàng xóm.</li></ul>
+<p>Khi gặp các dấu hiệu này, nên kiểm tra hệ thống và khoanh vùng vị trí nghi rò trước khi mở tường hoặc nền. Tùy hiện trạng công trình, thợ có thể kết hợp các phương pháp kiểm tra và thiết bị chuyên dụng.</p>
+<p>Minh Hiệp chuyên siêu âm dò tìm và sửa chữa rò rỉ đường ống nước âm tường, âm sàn và đường ống ngầm. Kết quả kiểm tra được đối chiếu với dấu hiệu thực tế; phương án và chi phí được trao đổi trước khi thi công.</p>
+<p class="knowledge-cta"><strong>📞 Nghi ngờ rò rỉ đường ống âm tường, âm sàn? Liên hệ điện thoại/Zalo Minh Hiệp: <a href="tel:0941689899">0941 689 899</a> để được tư vấn và hỗ trợ sửa chữa tại Hải Phòng và các tỉnh miền Bắc.</strong></p></article>
+<article class="knowledge-article" id="bai-viet-10"><span class="badge">KIẾN THỨC NƯỚC DÒ · BÀI 10</span>
+<h3>🏠 Trần nhà bị thấm nước, tường ẩm mốc? Hãy tìm đúng nguyên nhân</h3>
+<p>Trần nhà xuất hiện vết ố vàng, sơn phồng rộp, tường ẩm mốc hoặc nước nhỏ giọt bất thường có thể liên quan đến đường ống cấp nước, đường thoát nước, khu vực nhà vệ sinh, lớp chống thấm hoặc nước mưa.</p>
+<p><strong>Một số dấu hiệu cần lưu ý:</strong></p><ul><li>Vết ẩm xuất hiện hoặc lan rộng dù thời tiết khô ráo.</li><li>Trần, tường ẩm gần khu vực có đường ống nước.</li><li>Tiền nước tăng cao hoặc đồng hồ nước có dấu hiệu quay bất thường.</li><li>Nước thấm xuất hiện ở tầng dưới hoặc khu vực giáp nhà bên cạnh.</li></ul>
+<p>Không phải mọi trường hợp thấm đều do rò rỉ đường ống. Cần kiểm tra hiện trạng để phân biệt khả năng rò nước với lỗi chống thấm, đường thoát nước hoặc nước mưa. Chỉ sơn lại bề mặt khi chưa xử lý nguyên nhân có thể khiến tình trạng tái diễn.</p>
+<p>Minh Hiệp nhận kiểm tra và siêu âm dò tìm các vị trí nghi rò rỉ đường ống nước, hỗ trợ khoanh vùng trước khi sửa chữa và hạn chế đục phá không cần thiết.</p>
+<p class="knowledge-cta"><strong>📞 Nhà bạn bị thấm trần, thấm tường hoặc nghi rò rỉ đường ống nước? Gọi điện/Zalo Minh Hiệp: <a href="tel:0941689899">0941 689 899</a> để được tư vấn và hỗ trợ sửa chữa tại Hải Phòng và các tỉnh miền Bắc.</strong></p></article>
+</div>
 <p class="note"><a href="kien-thuc/">Xem toàn bộ bài viết và kiến thức về đường ống nước →</a></p>
 </div></section>
 <script>
@@ -314,7 +354,11 @@ a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,
     {num: 3, title: "Những vị trí đường ống nước thường bị rò rỉ", desc: "Một số khu vực có nhiều mối nối, thay đổi hướng ống hoặc thường xuyên tiếp xúc với độ ẩm nên cần được kiểm tra kỹ khi xuất hiện dấu hiệu bất thường."},
     {num: 4, title: "Nguyên nhân gây thấm trần, thấm sàn và cách phân biệt", desc: "Vết thấm có thể do đường ống cấp nước, đường thoát nước, lớp chống thấm hoặc nước mưa xâm nhập."},
     {num: 5, title: "Khi xây dựng nên chọn loại ống cấp nước nào?", desc: "Lựa chọn loại ống phụ thuộc nguồn nước nóng/lạnh, áp lực, vị trí lắp đặt, ngân sách và tiêu chuẩn thi công."},
-    {num: 6, title: "Cần làm gì khi nghi ngờ ống nước bị rò trong tường?", desc: "Kiểm tra theo từng bước giúp tránh đục phá không cần thiết và cung cấp thông tin hữu ích cho người sửa chữa."}
+    {num: 6, title: "Cần làm gì khi nghi ngờ ống nước bị rò trong tường?", desc: "Kiểm tra theo từng bước giúp tránh đục phá không cần thiết và cung cấp thông tin hữu ích cho người sửa chữa."},
+    {num: 7, title: "Tiền nước tăng cao bất thường: Dấu hiệu rò rỉ cần kiểm tra", desc: "Nhận biết dấu hiệu thất thoát nước và cách tìm nguyên nhân trước khi sửa chữa."},
+    {num: 8, title: "Đồng hồ nước quay khi không sử dụng: Phải làm gì?", desc: "Các bước kiểm tra ban đầu khi đồng hồ vẫn quay dù đã khóa vòi nước."},
+    {num: 9, title: "Rò rỉ đường ống âm tường, âm sàn: Đừng vội đục phá", desc: "Dấu hiệu nhận biết và cách khoanh vùng vị trí nghi rò bằng thiết bị phù hợp."},
+    {num: 10, title: "Thấm trần, thấm tường do rò nước: Tìm đúng nguyên nhân", desc: "Phân biệt dấu hiệu thấm và kiểm tra nguy cơ rò rỉ đường ống nước."}
   ];
   const target = document.getElementById('daily-articles');
   if (!target) return;
